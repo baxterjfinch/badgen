@@ -1,0 +1,12 @@
+{
+  "background": {
+		"pattern":[
+      "",
+			"<defs><linearGradient id='myLinearGradient1' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'><stop offset='0%' stop-color='#ffadf9' stop-opacity='1'/><stop offset='100%' stop-color='rgb(75 222 255)' stop-opacity='1'/></linearGradient></defs><rect x='10' y='10' width='500' height='500' rx='10' ry='10' style='fill:url(#myLinearGradient1);stroke: #ffadf9;stroke-width: 3;' />",
+			"<defs><linearGradient id='myLinearGradient1' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'><stop offset='0%' stop-color='#17a4ab' stop-opacity='1'/><stop offset='100%' stop-color='rgb(75 255 147)' stop-opacity='1'/></linearGradient></defs><rect x='10' y='10' width='500' height='500' rx='10' ry='10' style='fill:url(#myLinearGradient1);stroke: #17a4ab;stroke-width: 3;' />",
+			"<defs><linearGradient id='myLinearGradient1' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'><stop offset='0%' stop-color='#a94aff' stop-opacity='1'/><stop offset='100%' stop-color='rgb(255 75 75)' stop-opacity='1'/></linearGradient></defs><rect x='10' y='10' width='500' height='500' rx='10' ry='10' style='fill:url(#myLinearGradient1);stroke: #a94aff;stroke-width: 3;' />",
+			"<defs><linearGradient id='myLinearGradient1' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'><stop offset='0%' stop-color='#fd4b4b' stop-opacity='1'/><stop offset='100%' stop-color='rgb(255 159 59)' stop-opacity='1'/></linearGradient></defs><rect x='10' y='10' width='500' height='500' rx='10' ry='10' style='fill:url(#myLinearGradient1);stroke: #fd4b4b;stroke-width: 3;' />",
+			"<defs><linearGradient id='myLinearGradient1' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'><stop offset='0%' stop-color='#00000052' stop-opacity='1'/><stop offset='100%' stop-color='#00000052' stop-opacity='1'/></linearGradient></defs><rect x='10' y='10' width='500' height='500' rx='10' ry='10' style='fill:url(#myLinearGradient1);stroke: #00000052;stroke-width: 3;' />"
+		]
+	}
+}
