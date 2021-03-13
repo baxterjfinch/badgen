@@ -26,18 +26,27 @@ function common_lib(){
 	return require('./5_common_lib.json')
 }
 
+
+function attributes_lib(){
+	return require('./rare_attributes.json')
+}
+
 var avatar_lib = load_lib()
 var _legendary_lib = legend_lib()
 var _epic_lib = epic_lib()
 var _exotic_lib = exotic_lib()
 var _rare_lib = rare_lib()
 var _common_lib = common_lib()
+var rare_attributes = attributes_lib()
 
 function generate_avatar(avatar) {
     var svg = ""
     for (var part in avatar) {
 			if (part === "background") {
 				svg += avatar[part].pattern
+			} else if (part === "attr") {
+				svg += avatar[part].pattern
+				svg = svg.replace(/{{attr_color}}/g,rare_attributes[part].colors[avatar[part].colors])
 			} else {
 				svg += avatar_lib[part].pattern[avatar[part].pattern]
 				svg = svg.replace(/{{color}}/g,avatar_lib[part].colors[avatar[part].colors])
@@ -49,10 +58,14 @@ function generate_avatar(avatar) {
 function from_hash(hash, type) {
 	var avatar_hashed = {}
 	avatar_hashed["background"] = {}
+	avatar_hashed["attr"] = {}
 
 	switch(type) {
 		case 1:
 			avatar_hashed["background"].pattern = _legendary_lib["background"].pattern[0]
+			// HERE IS AN EXAMPLE OF ADDING THE RARE RADIOACTIVE STAMP TO A USER 0 is RADIOACTIVE 1 is X 2 is /
+			avatar_hashed["attr"].pattern = rare_attributes["attr"].pattern[1]
+			avatar_hashed["attr"].colors = Math.floor(Math.random()*rare_attributes["attr"].colors.length)
 			break;
 		case 2:
 			avatar_hashed["background"].pattern = _epic_lib["background"].pattern[0]
