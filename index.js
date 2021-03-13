@@ -64,7 +64,7 @@ function from_hash(hash, type) {
 		case 1:
 			avatar_hashed["background"].pattern = _legendary_lib["background"].pattern[0]
 			// HERE IS AN EXAMPLE OF ADDING THE RARE RADIOACTIVE STAMP TO A USER 0 is RADIOACTIVE 1 is X 2 is /
-			avatar_hashed["attr"].pattern = rare_attributes["attr"].pattern[0]
+			avatar_hashed["attr"].pattern = rare_attributes["attr"].pattern[1]
 			avatar_hashed["attr"].colors = Math.floor(Math.random()*rare_attributes["attr"].colors.length)
 			break;
 		case 2:
